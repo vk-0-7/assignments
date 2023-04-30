@@ -11,6 +11,7 @@ function Radio(props) {
     const { updateForm } = useContext(FormContext)
 
     const onChange = e => {
+        console.log("on change radio " + props.jsonKey + e.target.value)
         updateForm(props.jsonKey, e.target.value)
     }
 

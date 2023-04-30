@@ -9,8 +9,9 @@ function Ignore(props) {
     const [ignore, setIgnore] = useState(true)
 
     useEffect(() => {
+        console.log("ignore changing: ")
         props.conditions.forEach(condition => {
-            if (form[condition.jsonKey] === condition.value)
+            if (form[condition.jsonKey] == condition.value)
                 setIgnore(false)
             else
                 setIgnore(true)
