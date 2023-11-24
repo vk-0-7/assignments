@@ -54,6 +54,7 @@ function App() {
 
         <textarea
           ref={inputRef}
+          placeholder='Enter text here....'
           className='json-input'
         />
 
@@ -67,7 +68,7 @@ function App() {
               alert(JSON.stringify(form))
             }}>
               {parsedJson.map(component)}
-              <input type='submit' value="Submit" />
+              {/* <input type='submit' value="Submit" /> */}
             </form>
           </FormContext.Provider>
         </div>
